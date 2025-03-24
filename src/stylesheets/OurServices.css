@@ -1,0 +1,120 @@
+#service-section {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#service-section .my-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+#service-section .my-cards .service-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--borderLight);
+  box-shadow: var(--materialShadow);
+  background: var(--bgLight);
+  position: relative;
+  cursor: pointer;
+}
+
+#service-section .my-cards .service-card::before {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background: var(--primaryColor);
+  transform: rotate(0deg);
+  z-index: -1;
+  transition: 0.35s ease-in;
+}
+
+#service-section .my-cards .service-card:hover.service-card::before {
+  transform: rotate(8deg);
+}
+
+#service-section .my-cards .service-card .service-icon {
+  border: 1.5px solid var(--borderLight);
+  border-radius: 50%;
+  background: var(--bg-gradient);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#service-section .my-cards .service-card .service-icon img {
+  width: 80px;
+  padding: 14px;
+}
+
+#service-section .my-cards .service-card .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#service-section .my-cards .service-card .content h3 {
+  font-size: 1.3rem;
+  color: var(--textColor);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#service-section .my-cards .service-card .content p {
+  color: var(--textLight);
+  font-size: 1rem;
+}
+
+#service-section .my-cards .service-card .content button {
+  width: 150px;
+}
+
+@media (max-width: 992px) {
+  #service-section .my-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    z-index: 9;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #service-section {
+    margin-top: 3rem;
+  }
+
+  #service-section .my-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 436px) {
+  #service-section {
+    margin-top: 2rem;
+  }
+
+  #service-section .my-cards .service-card {
+    height: auto;
+    width: 100%;
+  }
+}

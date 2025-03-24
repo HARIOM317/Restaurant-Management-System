@@ -1,0 +1,27 @@
+.list-table-format {
+  margin-top: 1.5rem;
+}
+
+.list-table-format .food-img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.list-table-format .list {
+  margin-top: 2rem;
+}
+
+.list-table-format img {
+  width: 50px;
+}
+
+.list-table-format .cursor {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .list-table-format {
+    margin-top: 0;
+  }
+}

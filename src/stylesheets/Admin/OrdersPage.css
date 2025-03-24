@@ -1,0 +1,133 @@
+.order {
+  margin-top: 1.5rem;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr 1fr 1fr 1.5fr;
+  align-items: start;
+  box-shadow: var(--materialShadow);
+  gap: 1rem;
+  border: 1px solid var(--borderColor);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 30px 0;
+  font-size: 14px;
+  color: var(--textColor);
+  background: linear-gradient(to right, #f8ebe7, #fff7f0);
+  text-transform: capitalize;
+}
+
+.order-item .status-icon {
+  border: 1.5px solid var(--borderColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: var(--bgColor);
+}
+
+.order-item .status-icon .icon {
+  width: 60px;
+  padding: 4px;
+}
+
+.order-item .order-item-food,
+.order-item .order-item-name {
+  font-weight: 500;
+}
+
+.order-item .order-item-food {
+  color: var(--primaryHoverColor);
+}
+
+.order-item .order-item-name {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--headingColor);
+}
+
+.order-item .order-item-address,
+.order-item .order-item-phone {
+  color: var(--textLight);
+}
+
+.order-item .quantity-amount {
+  font-weight: 500;
+  color: var(--textColor);
+  margin: 0;
+  padding: 0;
+}
+
+.order-item .custom-select .ant-select-selector,
+.order-item .custom-select .ant-select-dropdown {
+  background-color: var(--bgColor) !important;
+  color: var(--headingColor) !important;
+  border: 1px solid var(--primaryColor) !important;
+}
+
+@media (max-width: 1200px) {
+  .order-item .status-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .order-item .status-icon .icon {
+    width: 45px;
+  }
+}
+
+@media (max-width: 1067px) {
+  .order-item {
+    font-size: 12px;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    padding: 15px 16px;
+  }
+}
+
+@media (max-width: 892px) {
+  .order-item {
+    grid-template-columns: 1fr 2.5fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .order-item {
+    grid-template-columns: 1.5fr 2.5fr;
+  }
+
+  .order {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .order-item .status-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .order-item .status-icon .icon {
+    width: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .order-item {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media (max-width: 324px) {
+  .order-item {
+    grid-template-columns: 1fr;
+  }
+}

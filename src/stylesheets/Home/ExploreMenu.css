@@ -1,0 +1,92 @@
+.explore-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5rem;
+}
+
+.explore-menu h1 {
+  color: var(--textColor);
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.explore-menu .explore-menu-text {
+  max-width: 60%;
+  color: var(--textLight);
+  text-align: justify;
+}
+
+.explore-menu .explore-menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  margin: 20px 0;
+  overflow-x: scroll;
+}
+
+.explore-menu .explore-menu-list .swiper-wrapper {
+  margin-bottom: 0px !important;
+}
+
+.explore-menu .explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-menu .explore-menu-list-item img {
+  min-width: 80px;
+  max-width: 80px;
+  min-height: 80px;
+  max-height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.explore-menu .explore-menu-list-item p {
+  margin-top: 10px;
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.explore-menu hr {
+  margin-top: 0;
+  height: 2px;
+  background: var(--textLight);
+  border: none;
+}
+
+.explore-menu .explore-menu-list-item .active {
+  border: 5px solid var(--primaryColor);
+  padding: 2.5px;
+}
+
+@media (max-width: 1050px) {
+  .explore-menu .explore-menu-text {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-menu {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .explore-menu h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 368px) {
+  .explore-menu h1 {
+    font-size: 1.5rem;
+  }
+}

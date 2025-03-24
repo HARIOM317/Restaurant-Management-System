@@ -1,0 +1,19 @@
+.dashboard-layout {
+  margin-top: 67px;
+  margin-bottom: 30px;
+  border-bottom: 1.5px solid var(--borderLight);
+}
+
+.dashboard-layout .main-content {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-layout {
+    border-bottom: none;
+  }
+
+  .dashboard-layout .main-content {
+    margin-bottom: 0;
+  }
+}

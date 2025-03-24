@@ -1,0 +1,157 @@
+.cart {
+  margin-top: 100px;
+}
+
+.cart img {
+  min-height: 40px;
+  max-height: 40px;
+  object-fit: cover;
+}
+
+.cart hr {
+  height: 2px;
+  background: #9b9fb9;
+  opacity: 0.25;
+}
+
+.cart .cross {
+  cursor: pointer;
+}
+
+/* --------------------------------------------------- */
+
+.cart .cart-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.cart .cart-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart .cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--textColor);
+}
+
+.cart .offline-cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--textColor);
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.cart .cart-total hr {
+  margin: 10px 0;
+}
+
+.cart .cart-total h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--textColor);
+  font-weight: 500;
+}
+
+.cart .cart-total button {
+  border: none;
+  color: white;
+  background: var(--primaryColor);
+  width: 200px;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.cart .cart-total button:hover {
+  background: var(--primaryHoverColor);
+}
+
+.cart .cart-promo-code {
+  flex: 1;
+}
+
+.cart .cart-promo-code p {
+  color: var(--textLight);
+}
+
+.cart .cart-promo-code-input,
+.cart .disabled-promo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bgColor);
+  border: 1px solid var(--borderColor);
+  border-radius: 4px;
+}
+
+.cart .cart-promo-code-input input,
+.cart .disabled-promo input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.cart .cart-promo-code-input button {
+  width: 150px;
+  padding: 12px 5px;
+  background: var(--primaryColor);
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.35s all ease;
+}
+
+.cart .disabled-promo button {
+  width: 150px;
+  padding: 12px 5px;
+  background: gray;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: default;
+  transition: 0.35s all ease;
+}
+
+.cart .cart-promo-code-input button:hover {
+  background: var(--primaryHoverColor);
+}
+
+/* Media Query */
+@media (max-width: 992px) {
+  .cart .cart-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .cart .cart-promo-code {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart .cart-promo-code-input {
+    width: 100%;
+  }
+
+  .cart .cart-promo-code-input input {
+    font-size: 14px;
+    padding-left: 8px;
+  }
+
+  .cart .cart-promo-code-input button {
+    width: 100px;
+    padding: 12px 4px;
+    font-size: 14px;
+  }
+}

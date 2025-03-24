@@ -1,0 +1,117 @@
+/* ----- hero-section Header Section ----- */
+.hero-section {
+  padding: 0 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+h1.sky-hut-offers {
+  font-size: 1.5rem;
+  color: var(--textColor);
+  margin: 2rem 0;
+}
+
+.typing {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.main-header-para {
+  font-size: 1.2rem;
+  color: var(--textLight);
+  margin: 1rem 0 0.8rem 0;
+  width: 90%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.main-header-section-images {
+  position: relative;
+}
+
+.main-header-section-images iframe {
+  width: 100%;
+  height: 350px;
+  margin-top: 2rem;
+  border: 2px solid var(--bgColor);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 1px rgba(32, 31, 31, 0.3);
+}
+
+.main-header-section-images .watermark {
+  position: absolute;
+  background: tomato;
+  color: white;
+  border-radius: 8px;
+  border: 1.5px solid white;
+  bottom: -3px;
+  left: 18px;
+  padding: 6px 10px;
+}
+
+.hero-section .btn-get-started {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 20px;
+  font-size: 1rem;
+  color: white;
+  text-align: start;
+  border-radius: 1.75rem;
+  display: inline-block;
+  white-space: nowrap;
+  border: 1.5px solid var(--primaryColor);
+  font-weight: 500;
+  background: var(--primaryColor);
+  transition: all 0.5s ease;
+}
+
+.hero-section .btn-get-started:hover {
+  background: white;
+  color: var(--primaryColor);
+}
+
+/* Media Query */
+@media (max-width: 1202px) {
+  .main-header-para {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-header-section-images .watermark {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-header-section-images {
+    margin-bottom: 1rem;
+  }
+
+  .main-header-section-images .watermark {
+    bottom: -3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 8px;
+  }
+  .main-header-section-images iframe {
+    width: 100%;
+    height: 50vw;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .btn-get-started {
+    padding: 8px 16px;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    border-radius: 1.3rem;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,50 @@
+.page-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.page-not-found .lottie-animation {
+  width: 70vh;
+  margin: 0 2rem;
+}
+
+.page-not-found h2 {
+  color: var(--textColor);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.page-not-found p {
+  color: var(--textLight);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.page-not-found .button {
+  color: white;
+  background: var(--primaryColor);
+  transition: all 0.35s ease;
+}
+
+.page-not-found .button:hover {
+  color: white;
+  background: var(--primaryHoverColor);
+}
+
+@media (max-width: 576px) {
+  .page-not-found .lottie-animation {
+    width: 100vw;
+  }
+
+  .page-not-found h2 {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .page-not-found p {
+    margin: 2.5rem 0;
+  }
+}

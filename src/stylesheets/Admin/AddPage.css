@@ -1,0 +1,69 @@
+.add {
+  margin-top: 50px;
+  color: var(--textColor);
+  font-size: 16px;
+}
+
+.add form {
+  gap: 20px;
+}
+
+.add .add-img-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px dashed var(--primaryColor);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.add .add-img-upload img {
+  width: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add .add-product-name input,
+.add .add-price input,
+.add .add-product-description textarea {
+  padding: 10px;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 8px;
+  transition: all 0.35s ease;
+}
+
+.add .add-category-price {
+  display: flex;
+  gap: 30px;
+}
+
+.add label {
+  font-weight: 500;
+  color: var(--textColor);
+  font-size: 14px;
+}
+
+.add .add-category-price select {
+  padding: 10px;
+  border: 1.5px solid var(--borderColor);
+  border-radius: 8px;
+  transition: all 0.35s ease;
+  width: 100%;
+}
+
+.add .add-btn {
+  width: 120px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  background: var(--primaryColor);
+  color: white;
+  cursor: pointer;
+  transition: 0.35s all ease;
+}
+
+.add .add-btn:hover {
+  background: var(--primaryHoverColor);
+}

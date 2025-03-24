@@ -1,0 +1,84 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login .login-container {
+  place-self: center;
+  color: var(--textLight);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  animation: fadeIn 0.5s;
+}
+
+.login .login-title h1 {
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--primaryColor);
+  font-size: 2rem;
+}
+
+.login .login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login .login-inputs input {
+  outline: none;
+  border: 1.5px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.35s all ease;
+}
+
+.login .login-inputs input:hover {
+  border-color: var(--primaryColor);
+}
+
+.login .login-inputs input:focus,
+.login .login-inputs input:active {
+  border-color: var(--primaryColor);
+  box-shadow: var(--shadowAll);
+}
+
+.login .login-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background: var(--primaryColor);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.login .login-container button:hover {
+  background: var(--primaryHoverColor);
+}
+
+.login .login-condition {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: -15px;
+}
+
+.login .login-condition input {
+  margin-top: 5px;
+}
+
+.login p span {
+  color: tomato;
+  font-weight: 500;
+  cursor: pointer;
+}

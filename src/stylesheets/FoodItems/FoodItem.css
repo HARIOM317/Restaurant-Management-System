@@ -1,0 +1,85 @@
+.food-item {
+  width: 100%;
+  min-height: 400px;
+  margin: auto;
+  border-radius: 15px;
+  border: 1px solid #dcd2e0;
+  box-shadow: var(--materialShadowBottom);
+  transition: 0.35s all ease;
+  animation: fadeIn 1.5s;
+}
+
+.food-item:hover {
+  transform: scale(1.015);
+}
+
+.food-item .food-item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+}
+
+.food-item .food-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 12px 12px 0 12px;
+  background: var(--bg-gradient);
+  border-radius: 0 0 15px 15px;
+  min-height: 200px;
+}
+
+.food-item .food-item-name h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.food-item .food-item-description {
+  color: var(--textLight);
+  font-size: 12px;
+  text-align: justify;
+  margin-top: 8px;
+}
+
+.food-item .food-item-price {
+  color: var(--primaryColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.food-item .food-item-img-container {
+  position: relative;
+}
+
+.food-item .food-item-img-container .add {
+  width: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.food-item .food-item-img-container .food-item-counter {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 10px;
+  padding: 6px;
+  box-shadow: var(--materialShadow);
+  border-radius: 50px;
+  background: white;
+}
+
+.food-item .food-item-img-container .food-item-counter img {
+  width: 30px;
+  text-align: center;
+  cursor: pointer;
+}

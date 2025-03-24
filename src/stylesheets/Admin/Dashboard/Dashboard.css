@@ -1,0 +1,145 @@
+.dashboard-content {
+  margin-top: 1.5rem;
+  width: 100% !important;
+}
+
+.dashboard-content .dashboard-top {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dashboard-content .report-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.dashboard-content .dashboard-cards {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-content .ant-card .ant-card-head-title {
+  color: white;
+}
+
+.dashboard-content .ant-card .ant-card-body {
+  padding: 0;
+}
+
+.dashboard-content .dashboard-cards .dashboard-card {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bolder;
+  width: 200px;
+}
+
+.dashboard-content .dashboard-cards .dashboard-card.card1 {
+  background: linear-gradient(to right, #ff5c5b, #ff2426);
+}
+.dashboard-content .dashboard-cards .dashboard-card.card2 {
+  background: linear-gradient(to right, #3f7bf3, #2a5eef);
+}
+
+.dashboard-content .dashboard-cards .dashboard-card.card3 {
+  background: linear-gradient(to right, #28bfa1, #21a170);
+}
+
+.dashboard-content .dashboard-cards .dashboard-card.card4 {
+  background: linear-gradient(to right, #6d40ff, #541ce7);
+}
+
+.dashboard-content .chart-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-content .tableRow {
+  margin-top: 5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1268px) {
+  .dashboard-content .dashboard-cards .dashboard-card {
+    font-size: 2.15rem;
+    font-weight: bold;
+    width: 170px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-content .dashboard-top {
+    flex-direction: column;
+  }
+  .dashboard-content .report-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 944px) {
+  .dashboard-content .chart-container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 472px) {
+  .dashboard-content .report-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .dashboard-content .dashboard-cards {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-content .dashboard-cards .dashboard-card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 367px) {
+  .dashboard-content .dashboard-cards .dashboard-card {
+    width: 100%;
+    min-width: 80vw;
+  }
+
+  .dashboard-content .report-buttons {
+    flex-direction: column;
+  }
+
+  .dashboard-content .report-buttons .report-btn {
+    width: 100%;
+  }
+
+  .dashboard-content .dashboard-cards {
+    margin: auto;
+  }
+}

@@ -1,0 +1,10 @@
+.user-offline-orders{
+    margin-top: 100px;
+}
+
+.user-offline-orders h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--textColor);
+    margin-bottom: 30px;
+}

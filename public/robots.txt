@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /verify
+Disallow: /offline-menu
+Disallow: /offline-cart
+Disallow: /myorders
+Disallow: /offline/my-orders
+Disallow: /my-reservations
+Disallow: /offline/my-reservations
+Disallow: /my-offline-orders
+Disallow: /offline/my-offline-orders
+Disallow: /admin/*
+Disallow: /staff/*
+
+Sitemap: https://www.skyhutcafe.com/sitemap.xml

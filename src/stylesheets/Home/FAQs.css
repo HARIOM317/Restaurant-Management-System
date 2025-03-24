@@ -1,0 +1,22 @@
+/* ----- FAQs - Accordion Section ----- */
+.accordion .item {
+  color: var(--textLight);
+  background: var(--bgLight);
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+}
+
+.accordion .item .accordion-header button {
+  box-shadow: none;
+  font-weight: 500;
+  color: var(--textColor);
+  background: var(--bgLight);
+  font-size: 16px;
+}
+
+.accordion .item .accordion-body {
+  margin: 0 8px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 14px;
+}
