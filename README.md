@@ -156,7 +156,7 @@ Integrated with Razorpay to securely handle online payments for:
 
 The admin dashboard provides visual insights into:
 
-   -Total Orders
+   - Total Orders
 
    - Total Revenue
 
@@ -190,16 +190,16 @@ If you find this project useful or have suggestions, feel free to raise an issue
 
 **Hariom Singh Rajput** : Founder of GitNexa
    - B.Tech CSE | Software Developer | MERN Stack | DSA with C++
-   - Portfolio | LinkedIn | GitHub
+   - [Portfolio](https://hariom317.github.io/Hariom-Singh-Rajput-Portfolio/) | [LinkedIn](https://www.linkedin.com/in/hariom-singh-mewada/) | [GitHub](https://github.com/HARIOM317)
 
 **Harsh Kamde** : Founder of TrySoft
    - B.Tech CSE | Software Developer | MERN Stack | DSA with C++
-   - Portfolio | LinkedIn | GitHub
+   - [LinkedIn](https://www.linkedin.com/in/harsh-kamde/) | [GitHub](https://github.com/harsh-kamde)
 
 ---
 
 ## 📝 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. You can view full license [here](LICENSE).
 
 ---
 
