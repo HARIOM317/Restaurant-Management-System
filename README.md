@@ -1,126 +1,240 @@
-# SkyHut Cafe and Restaurant
+# Sky Hut Cafe 🍽️
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/HARIOM317/Restaurant-Management-System) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Node.js Version](https://img.shields.io/badge/node-16.x-blue.svg)](https://nodejs.org/)
 
-Welcome to the SkyHut Cafe and Restaurant project! This README provides instructions for setting up and running the project in both development and production environments.
+**A Complete Restaurant Management Solution | Built with MERN Stack**
 
-## Table of Contents
+**Live Demo:** [Sky Hut Cafe](https://www.skyhutcafe.com/)
 
-1. Project Overview
-2. Features
-3. Tech Stack
-4. Getting Started
-   - Development Setup
-   - Production Setup
-5. Branches
-6. Deployment
-7. Contributing
-8. License
+<p align="center"><img src="https://github.com/user-attachments/assets/7c33f1d5-4eac-4e0e-8713-e841ba9af7ab" alt="Sky Hut Cafe" /></p>
 
-## Project Overview
+---
 
-SkyHut Cafe and Restaurant is a web application that provides users with an interactive platform to explore our menu, make reservations, and benefit from various offers and discounts.
+## 📌 Overview
 
-## Features
+**Sky Hut Cafe** is a full-featured restaurant management web application built with the MERN stack. Designed to serve as a complete digital solution for restaurant operations, it includes role-based access for admins, staff, and users, enabling functionalities such as online ordering, real-time order management, event bookings, payments, reviews, and more.
 
-- Chatbot for user queries
-- Dashboard for staff members with role management
-- Notifications for orders, events, and reservations
-- Pre-payment for bookings
-- Automated discounts and offers
-- Instagram-based discounts
-- Cancellation reasons
-- QR code for offline orders
-- Loyalty points system
+This platform streamlines both customer-facing and backend operations for restaurants, offering a modern, scalable, and real-time digital experience.
 
-## Tech Stack
+---
 
-- Frontend: React
-- Backend: Node.js, Express
-- Database: MongoDB
-- Deployment: Vercel, GitHub
-- CI/CD: GitHub Actions
+## 🔧 Tech Stack
 
-## Getting Started
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Real-Time:** Socket.io
+- **Authentication:** JWT + Role-Based Access Control
+- **Payments:** Razorpay Integration
+- **Additional Tools:** QR Code Generator, Audio Notifications, Charts for Analytics
 
-## Development Setup
+---
 
-1. Clone the Repository:
-   git clone https://github.com/harsh-kamde/skyhut.git
-   cd skyhut
+## 🚀 Features
 
-2. Checkout the Development Branch:
-   git checkout development
+### 👤 User Panel
+- Online reservation (Hut/Table)
+- Event booking (e.g., party or function)
+- Order food online
+- Razorpay payment gateway integration
+- Loyalty system with **Points and Badges**
+- Submit reviews and feedback
+- QR Code-based quick offline order
 
-3. Install Dependencies:
+### 🛠️ Admin Panel
+- Dashboard with complete insights and analytics
+- Manage staff, bookings, menus, events, and reviews
+- Real-time order and event updates via **Socket.io**
+- Audio notifications for new orders or reservations
+- Role-based login with secure access control
+
+### 👨‍🍳 Staff Panel
+- View assigned tasks or orders in real-time
+- Notifications for new bookings or updates
+- Manage table service and order status
+
+---
+
+## 📸 Screenshots
+
+<div align="center">
+   <img src="https://github.com/user-attachments/assets/79e5ea86-3930-44ab-aa3b-3f0b1a4e576b" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/5964506b-bb86-41d4-88e2-e4776cf34c48" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/9e871430-5fc1-491f-8ff1-9405fd6030d2" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/bc95cdb1-5b06-41a9-ba65-cf903d48d468" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/1d284b92-5003-4b0a-b150-9c050dce1f5a" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/399700fe-c4b5-45f0-8476-ba1218f04ed2" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/5671b5c2-d2f6-4755-9002-3f1f3de38060" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/224e17f9-aac5-4387-981c-aea7768dd7ca" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/298ddc4a-ed9d-4d60-9e03-033ab53dc0db" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/d1bfb168-3288-4bff-ae26-0b07bcc7f46b" alt="Restaurant management website" width="330" />
+   <img src="https://github.com/user-attachments/assets/8c64b1ed-3860-4328-9d2b-4b8357f18124" alt="Restaurant management website" width="330" />
+</div>
+
+---
+
+## ⚙️ How to Run Locally
+
+### Prerequisites
+- Node.js
+- MongoDB
+- Razorpay account (for payment testing)
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/HARIOM317/Restaurant-Management-System.git
+   cd frontend
+
+2. **Install frontend dependencies**
+
+   ```bash
+   cd frontend
    npm install
 
-4. Set Environment Variables:
+2. **Install backend dependencies**
 
-   - Create a .env file in the root directory and add necessary environment variables.
-
-5. Run the Development Server:
-   npm run dev
-
-6. Access the Application:
-   - Open your browser and navigate to http://localhost:3000
-
-## Production Setup
-
-1. Clone the Repository:
-   git clone https://github.com/harsh-kamde/skyhut.git
-   cd skyhut
-
-2. Checkout the Main Branch:
-   git checkout main
-
-3. Install Dependencies:
+   ```bash
+   cd backend
    npm install
 
-4. Set Environment Variables:
+3. **Environment Variables**
+   Create a .env file in the /server directory with the following:
 
-   - Create a .env file in the root directory and add necessary environment variables.
+   - frontend .env
+     
+        ```env
+      PORT=5000
+      MONGO_URI=your_mongodb_connection_string
+      JWT_SECRET=your_jwt_secret
+      RAZORPAY_KEY_ID=your_key_id
+      RAZORPAY_KEY_SECRET=your_key_secret
 
-5. Build the Application:
-   npm run build
+   - backend .env
+   - 
+     ```env
+      PORT=5000
+      MONGO_URI=your_mongodb_connection_string
+      JWT_SECRET=your_jwt_secret
+      RAZORPAY_KEY_ID=your_key_id
+      RAZORPAY_KEY_SECRET=your_key_secret
 
-6. Start the Production Server:
+4. **Start the frontend**
+
+   ```bash
+   cd frontend
    npm start
 
-Branches
+5. **Start backend server**
 
-- main: Production-ready code.
-- development: Development and testing of new features.
-- feature/<feature-name>: Individual feature branches.
+   ```bash
+   cd backend
+   npm start
 
-## Deployment
+---
 
-## Continuous Deployment with Vercel
+## 📈 Admin Dashboard
 
-1. Connect GitHub Repository to Vercel:
+The admin dashboard provides visual insights into:
 
-   - In Vercel, create a new project and link it to your GitHub repository.
-   - Vercel will automatically deploy branches.
+   -Total Orders
 
-2. Environment Variables:
+   - Total Revenue
 
-   - Set environment variables in Vercel for both development and production branches.
+   - Upcoming Events
 
-3. Custom Domains:
-   - Assign custom domains to the production branch in Vercel settings.
+   - User Feedback
 
-## Contributing
+   - Real-time activity log with audio cues
 
-We welcome contributions from the community. Please follow these steps:
+---
 
-1. Fork the repository.
-2. Create a new branch from development.
-3. Make your changes.
-4. Open a pull request to the development branch.
+## 📢 Real-time Capabilities
 
-## Developer & Team
+   - Socket.io is used for real-time updates between users, staff, and admin.
 
-1. Hariom Singh Rajput - Founder of GitNexa
-2. Harsh Kamde - Founder of TrySoft
+   - Audio alerts notify staff/admin of important events like new bookings, order status updates, etc.
 
-## License
+---
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## 🔐 Authentication
+
+Role-based login system:
+
+   - Admin
+
+   - Staff
+
+   - User
+
+Secure access and routing based on roles ensure data privacy and operational efficiency.
+
+---
+
+## 📱 QR Code Ordering
+
+   - Each table/hut has a unique QR code.
+
+   - Scan to place offline orders directly via the mobile interface.
+
+---
+
+## 💳 Payments
+
+Integrated with Razorpay to securely handle online payments for:
+
+   - Food orders
+
+   - Event bookings
+
+   - Reservation fees
+
+---
+
+## ⭐ Future Enhancements
+
+   - Customer-facing mobile app (Flutter-based)
+
+   - Inventory and kitchen management
+
+   - SMS/Email notifications
+
+   - AI-based sales forecasting
+
+---
+
+## 📬 Feedback
+
+If you find this project useful or have suggestions, feel free to raise an issue or contribute.
+
+---
+
+## 🧑‍💻 Author
+
+**Hariom Singh Rajput** : Founder of GitNexa
+   - B.Tech CSE | Software Developer | MERN Stack | DSA with C++
+   - Portfolio | LinkedIn | GitHub
+
+**Harsh Kamde** : Founder of TrySoft
+   - B.Tech CSE | Software Developer | MERN Stack | DSA with C++
+   - Portfolio | LinkedIn | GitHub
+
+---
+
+## 📝 License
+This project is licensed under the MIT License.
+
+---
+
+## 📞 Contact
+
+🌐 Website: https://www.skyhutcafe.com
+
+📧 Email: support@skyhutcafe.com
+
+---
+
+"Innovation distinguishes between a leader and a follower." – Steve Jobs
