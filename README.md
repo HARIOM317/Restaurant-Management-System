@@ -1,9 +1,9 @@
-# Sky Hut Cafe 🍽️
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/HARIOM317/Restaurant-Management-System) 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+# Sky Hut Cafe – Frontend 🍽️  
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/HARIOM317/Restaurant-Management-System)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-16.x-blue.svg)](https://nodejs.org/)
 
-**A Complete Restaurant Management Solution | Built with MERN Stack**
+**Frontend of Sky Hut Cafe | Built with React.js + Ant Design**
 
 **Live Demo:** [Sky Hut Cafe](https://www.skyhutcafe.com/)
 
@@ -15,48 +15,50 @@
 
 **Sky Hut Cafe** is a full-featured restaurant management web application built with the MERN stack. Designed to serve as a complete digital solution for restaurant operations, it includes role-based access for admins, staff, and users, enabling functionalities such as online ordering, real-time order management, event bookings, payments, reviews, and more.
 
-This platform streamlines both customer-facing and backend operations for restaurants, offering a modern, scalable, and real-time digital experience.
+This is the **frontend application** of the Sky Hut Cafe Restaurant Management System. It offers a dynamic and interactive interface for users, staff, and admins to manage orders, reservations, events, and more.
 
 ---
 
 ## 🔧 Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Real-Time:** Socket.io
-- **Authentication:** JWT + Role-Based Access Control
-- **Payments:** Razorpay Integration
-- **Additional Tools:** QR Code Generator, Audio Notifications, Charts for Analytics
+- **Frontend Framework:** React.js
+- **Styling:** Tailwind CSS
+- **State Management:** React Context API
+- **Routing:** React Router DOM
+- **Realtime:** Socket.io-client
+- **Payment Integration:** Razorpay
+- **Other Tools:** QR Code Generator, Audio Alerts
 
 ---
 
 ## 🚀 Features
 
 ### 👤 User Panel
-- Online reservation (Hut/Table)
-- Event booking (e.g., party or function)
-- Order food online
-- Razorpay payment gateway integration
-- Loyalty system with **Points and Badges**
-- Submit reviews and feedback
-- QR Code-based quick offline order
+- Book huts and tables
+- Order food online with real-time updates
+- Event/party reservation
+- Earn points and badges
+- View order history
+- Review and feedback submission
 
 ### 🛠️ Admin Panel
-- Dashboard with complete insights and analytics
-- Manage staff, bookings, menus, events, and reviews
-- Real-time order and event updates via **Socket.io**
-- Audio notifications for new orders or reservations
-- Role-based login with secure access control
+- Dashboard with statistics
+- Staff and user management
+- Menu, reservation, and order control
+- Notifications and real-time order tracking
+- Audio alerts and analytics
 
 ### 👨‍🍳 Staff Panel
-- View assigned tasks or orders in real-time
-- Notifications for new bookings or updates
-- Manage table service and order status
+- View and manage orders
+- Get live updates
+- Notifications for new bookings
+
+### 📱 QR Code Ordering
+- Generate and scan QR codes for instant table ordering (offline accessible)
 
 ---
 
-## 📸 Screenshots
+## 📸 UI Screenshots
 
 <div align="center">
    <img src="https://github.com/user-attachments/assets/79e5ea86-3930-44ab-aa3b-3f0b1a4e576b" alt="Restaurant management website" width="330" />
@@ -74,12 +76,12 @@ This platform streamlines both customer-facing and backend operations for restau
 
 ---
 
-## ⚙️ How to Run Locally
+## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js
-- MongoDB
-- Razorpay account (for payment testing)
+
+   - Node.js
+   - React CLI
 
 ### Installation
 
@@ -95,72 +97,28 @@ This platform streamlines both customer-facing and backend operations for restau
    cd frontend
    npm install
 
-2. **Install backend dependencies**
-
-   ```bash
-   cd backend
-   npm install
-
 3. **Environment Variables**
-   Create a .env file in the /server directory with the following:
 
-   - frontend .env
-     
-        ```env
-      PORT=5000
-      MONGO_URI=your_mongodb_connection_string
-      JWT_SECRET=your_jwt_secret
-      RAZORPAY_KEY_ID=your_key_id
-      RAZORPAY_KEY_SECRET=your_key_secret
-
-   - backend .env
-   - 
-     ```env
-      PORT=5000
-      MONGO_URI=your_mongodb_connection_string
-      JWT_SECRET=your_jwt_secret
-      RAZORPAY_KEY_ID=your_key_id
-      RAZORPAY_KEY_SECRET=your_key_secret
+   Create a `.env` file in the `frontend` directory:
+   
+      ```env
+      VITE_RAZORPAY_KEY_ID=your_rezorpay_key_id
 
 4. **Start the frontend**
 
    ```bash
-   cd frontend
-   npm start
-
-5. **Start backend server**
-
-   ```bash
-   cd backend
    npm start
 
 ---
 
-## 📈 Admin Dashboard
+## 📢 Real-time Updates
 
-The admin dashboard provides visual insights into:
-
-   -Total Orders
-
-   - Total Revenue
-
-   - Upcoming Events
-
-   - User Feedback
-
-   - Real-time activity log with audio cues
+- Integrated with **Socket.io** for real-time order/reservation notifications.
+- Audio notifications play when new activity is received.
 
 ---
 
-## 📢 Real-time Capabilities
-
-   - Socket.io is used for real-time updates between users, staff, and admin.
-
-   - Audio alerts notify staff/admin of important events like new bookings, order status updates, etc.
-
----
-
-## 🔐 Authentication
+## 🔐 Role-based Access
 
 Role-based login system:
 
@@ -182,7 +140,7 @@ Secure access and routing based on roles ensure data privacy and operational eff
 
 ---
 
-## 💳 Payments
+## 💳 Payments Integration
 
 Integrated with Razorpay to securely handle online payments for:
 
@@ -191,6 +149,22 @@ Integrated with Razorpay to securely handle online payments for:
    - Event bookings
 
    - Reservation fees
+
+---
+
+## 📈 Admin Dashboard
+
+The admin dashboard provides visual insights into:
+
+   -Total Orders
+
+   - Total Revenue
+
+   - Upcoming Events
+
+   - User Feedback
+
+   - Real-time activity log with audio cues
 
 ---
 
@@ -231,10 +205,9 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 
-🌐 Website: https://www.skyhutcafe.com
-
-📧 Email: support@skyhutcafe.com
+🌐 Website: [https://www.skyhutcafe.com](https://www.skyhutcafe.com)
+📧 Email: [support@skyhutcafe.com](mailto:support@skyhutcafe.com)
 
 ---
 
-"Innovation distinguishes between a leader and a follower." – Steve Jobs
+> "Innovation distinguishes between a leader and a follower." – Steve Jobs
