@@ -107,7 +107,7 @@ This is the **frontend application** of the Sky Hut Cafe Restaurant Management S
 4. **Start the frontend**
 
    ```bash
-   npm start
+   npm run dev
 
 ---
 
