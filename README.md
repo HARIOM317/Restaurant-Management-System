@@ -5,7 +5,7 @@
 
 **Frontend of Sky Hut Cafe | Built with React.js + Ant Design**
 
-**Live Demo:** [Sky Hut Cafe](https://www.skyhutcafe.com/)
+**Live Demo:** [Sky Hut Cafe](https://www.skyhutcafe.in/)
 
 <p align="center"><img src="https://github.com/user-attachments/assets/7c33f1d5-4eac-4e0e-8713-e841ba9af7ab" alt="Sky Hut Cafe" /></p>
 
